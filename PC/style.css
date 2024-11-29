@@ -112,7 +112,7 @@
     left: 0;
     text-align: left;
     padding: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 350px;
 }
 
 .artifakt img {
@@ -161,6 +161,33 @@ main p{
     width: 600px;
     text-align: center;
 }
+
+
+footer {
+  background-color: #333; /* Темно-сірий фон */
+  color: #fff; /* Білий текст */
+  padding: 20px; /* Відступи всередині футера */
+}
+
+footer p {
+  margin: 5px 0; /* Відступи між текстовими елементами */
+  text-align: left; /* Вирівнювання тексту ліворуч */
+  display: inline-block; /* Текст поруч із зображенням */
+  vertical-align: middle; /* Вирівнювання по центру */
+  margin-left: 10px; /* Відступ між текстом і зображенням */
+}
+
+footer img {
+  display: inline-block; /* Розміщення зображень на одному рядку з текстом */
+  width: 30px; /* Розмір зображення */
+  height: 30px;
+  vertical-align: middle; /* Вирівнювання зображення по центру тексту */
+}
+
+footer div {
+  margin-bottom: 10px; /* Відступ між секціями */
+}
+
 
 
 /* Початок модульних блоків */
