@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+  body {
+    margin: 0;
+    background-image: url('../media/Fon.png'); /* Шлях до твого фото */
+    background-size: cover; /* Масштабувати, щоб покрило весь екран */
+    background-repeat: no-repeat; /* Без повторення */
+    background-position: center; /* Центрувати */
+    position: relative;
+  }
+
+ 
+  
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Темне затемнення */
+    z-index: -1; /* Псевдоелемент позаду всього контенту */
+  }
+
+  
+  main {
+    min-height: 100vh; /* Головна частина займає всю висоту екрану */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(125, 125, 125); /* Текст буде білим для кращої видимості */
+    text-align: center;
+  }
+  
+  .Baza1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Вирівнює лівий і правий блоки */
+    background-color: #929292; /* Світло-сірий фон для верхньої панелі */
+    padding: 10px 20px;
+    border-bottom: 2px solid #aaa; /* Легка тінь внизу */
+  }
+  
+  .Baza1 img {
+    height: 50px; /* Розмір логотипа */
+  }
+  
+  .Baza1 p {
+    margin: 0;
+    font-size: 24px;
+    color: black; /* Текст логотипа */
+    font-weight: bold;
+    margin-left: 10px; /* Відступ між зображенням і текстом */
+  }
+  
+  .Baza1 > div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .burger:hover {
+    background-color: #acff83; /* Ефект при наведенні */
+  }
+  
+  .burger img {
+    height: 30px; /* Розмір значка інформації */
+  }
+
+
+
+  .whitebord {
+    background-color: rgba(255, 255, 255, 0.581);
+    margin: auto;
+    width: 700px;
+    height: 4300px;
+    position: relative;
+    border-radius: 10px; /* Кутове округлення (якщо потрібно) */
+    margin-top: 740px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.7); /* Розмиття по краях */
+  }
+  
+  .pR2{
+    color: rgb(12, 146, 0);
+    
+  }
+
+  .artifakt {
+    display: inline-block;
+    animation: shake 0.5s infinite alternate;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    padding: 30px;
+    padding-bottom: 450px;
+}
+
+.artifakt img {
+    width: 50px; /* Зменшуємо розмір фото */
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-3px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-8px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+
+main p{
+    width: 650px;
+    font-size: 25px;
+    padding: 30px;
+    margin: 10px;
+    color: black;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+.pH{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.Mut{
+    width: 600px;
+    text-align: center;
+}
+
+
+footer {
+  background-color: #333; /* Темно-сірий фон */
+  color: #fff; /* Білий текст */
+  padding: 20px; /* Відступи всередині футера */
+}
+
+footer p {
+  margin: 5px 0; /* Відступи між текстовими елементами */
+  text-align: left; /* Вирівнювання тексту ліворуч */
+  display: inline-block; /* Текст поруч із зображенням */
+  vertical-align: middle; /* Вирівнювання по центру */
+  margin-left: 10px; /* Відступ між текстом і зображенням */
+}
+
+footer img {
+  display: inline-block; /* Розміщення зображень на одному рядку з текстом */
+  width: 30px; /* Розмір зображення */
+  height: 30px;
+  vertical-align: middle; /* Вирівнювання зображення по центру тексту */
+}
+
+footer div {
+  margin-bottom: 10px; /* Відступ між секціями */
+}
+
+
+
+/* Початок модульних блоків */
+
+/* //////Modul////// //////Modul////// //////Modul////// //////Modul////// //////Modul////// //////Modul////// //////Modul////// //////Modul////// //////Modul//////  */
+
+/* Сховати чекбокси, але зберегти їх функціональність */
+.modal-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+/* Стилі для відповідних елементів для активації */
+.modal-toggle-label {
+    cursor: pointer;
+}
+
+
+
+
+.P1{
+    margin-bottom: 30px;
+}
+
+.Rozdil{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.P2, .P3, .P4, .P5{
+    margin-left: 20px;
+    color: rgb(96, 181, 255);
+}
+
+.P3{
+    margin-top: 30px;
+}
+
+.P4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Сховати модальні вікна за замовчуванням */
+.modal_1, .modal_2, .modal_3 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Показати модальне вікно, якщо чекбокс активний */
+#modal-toggle-1:checked ~ .modal_1,
+#modal-toggle-2:checked ~ .modal_2,
+#modal-toggle-3:checked ~ .modal_3 {
+    display: flex;
+}
+
+/* Стилі для вмісту модальних вікон */
+.modal_box_1, .modal_box_2, .modal_box_3 {
+    width: 500px;
+    background-color: #343434;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    color: rgb(0, 157, 29);
+}
+
+/* Закрити модальне вікно */
+.close-button {
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+
+.artifact-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Заголовок артефакта */
+.artifact-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Зображення артефакта */
+.artifact-image {
+  width: 60px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #f4f4f4;
+}
+
+/* Вступний текст */
+.artifact-intro {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* Опис артефакта */
+.artifact-description {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.artifact-description strong {
+  color: #ffa500;
+}
+
