@@ -10,7 +10,6 @@
     margin: 0;
     background-image: url('../media/Fon.png'); /* Шлях до твого фото */
     background-size: cover; /* Масштабувати, щоб покрило весь екран */
-    background-repeat: no-repeat; /* Без повторення */
     background-position: center; /* Центрувати */
     position: relative;
   }
@@ -48,12 +47,12 @@
   }
   
   .Baza1 img {
-    height: 50px; /* Розмір логотипа */
+    height: 20px; /* Розмір логотипа */
   }
   
   .Baza1 p {
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
     color: black; /* Текст логотипа */
     font-weight: bold;
     margin-left: 10px; /* Відступ між зображенням і текстом */
@@ -71,8 +70,8 @@
     background-color: white;
     border: 2px solid #ccc;
     border-radius: 15px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     transition: 0.3s ease;
   }
@@ -82,7 +81,7 @@
   }
   
   .burger img {
-    height: 30px; /* Розмір значка інформації */
+    height: 20px; /* Розмір значка інформації */
   }
 
 
