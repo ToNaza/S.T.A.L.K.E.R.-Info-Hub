@@ -8,7 +8,7 @@
 
   body {
     margin: 0;
-    background-image: url('../media/Fon.png'); /* Шлях до твого фото */
+    background-image: url('./media/Fon.png'); /* Шлях до твого фото */
     background-size: cover; /* Масштабувати, щоб покрило весь екран */
     background-position: center; /* Центрувати */
     position: relative;

@@ -8,7 +8,7 @@
 
   body {
     margin: 0;
-    background-image: url('../media/Fon2.jpg');
+    background-image: url('./media/Fon2.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
     position: relative;
